@@ -37,10 +37,12 @@
   align-items: center;
   overflow-y: auto;
   padding: 20px;
+
 }
 
 .modal-content {
-  background: #fff;
+  background: #cea15a;
+  color: white;
   width: 80%;
   max-width: 900px;
   border-radius: 8px;
@@ -48,7 +50,30 @@
   padding: 20px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: #a6784d transparent; /* Thumb color and track transparency for Firefox */
+
 }
+
+.modal-content::-webkit-scrollbar {
+  width: 6px; /* Set a very thin scrollbar width */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* Make the track transparent */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #a6784d; /* Color of the scrollbar thumb */
+  border-radius: 50px; /* Make the thumb cylindrical */
+} 
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: #8f5f2e; /* Change thumb color on hover */
+}
+
+
+
 
 .close {
   position: absolute;
@@ -87,6 +112,8 @@
 .modal-text {
   clear: both;
   padding-top: 20px;
+  max-height: 300px; /* Set a max height for the content area */
+  overflow-y: auto; /* Enable scrolling when content overflows */
 }
 
 @media screen and (max-width: 768px) {
@@ -104,7 +131,50 @@
   .modal-info {
     text-align: center;
   }
+  .img-fluid_1 {
+    max-width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 10px;
 }
+.site-section {
+    padding: 1em 0;
+}
+.col-lg-4{
+  font-size: 10px !important;
+}
+.read-more-content{
+  display: none;  
+}
+.row_1 p{
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+.spacing1{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+}
+.site-section{
+  padding: 0em 0;
+}
+.row_1{
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.img-fluid_1 {
+   width: 26rem;
+  height: 30rem;
+    vertical-align: middle !important;
+    border-style: none !important;
+    padding: 0;
+
+}
+.spacing{
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
 
 
     </style>
@@ -175,29 +245,39 @@
     
     
     <div class="site-section section-1 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-md-4">
-            <img src="images/img_sq.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-4">
-            <div class="px-lg-3">
-              <p class="dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non temporibus ut quasi aspernatur. Alias rerum tempore animi omnis dolores deleniti quibusdam.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem a possimus quae quis nam ducimus saepe. Facere est maiores unde magnam, incidunt saepe repellendus. Officia natus possimus inventore eius soluta!</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem a possimus quae quis nam ducimus saepe. Facere est maiores unde magnam, incidunt saepe repellendus. Officia natus possimus inventore eius soluta!</p>
-            <p>Facere est maiores unde magnam, incidunt saepe repellendus. Officia natus possimus inventore eius soluta</p>
-          </div>
+  <div class="w-full overflow-hidden ">
+    <div class="row row_1">
+      <div class="col-lg-4 mb-md-4">
+        <img src="https://auruslegal.com/assets/aurus1-szL1dPz_.png" alt="Image" class="img-fluid_1">
+      </div>
+      <div class="col-lg-4 my-3 spacing1">
+        <div>
+          <p class="dropcap">Jhangiani, Narula & Associates, founded by Mr. Dilip Jhangiani and Mr. Rajiv Narula in the year 1999 and has been registered as a Law Firm with the Bombay High Court on the Original Side since that year. The Firm has, thereafter, seen the inclusion of Mr. Anuuj Narula and Mr.Aurup Dasgupta as Partners.</p>
+          <p>The Firm has been actively practicing in litigation undertaken in the Bombay High Court and Bombay City Civil Court at Mumbai and Goregaon and any other ancillary Courts and Tribunals in Mumbai. The Firm has offices in downtown Mumbai at Fort and Colaba as well as in Goregaon in the suburbs.</p>
+          <p>The Firm commenced legal practice in Delhi in the year 2007 under the name J. N. A. Law with Delhi-based Partners.</p>
         </div>
+      </div>
+      <div class="col-lg-4 my-3 spacing1 ">
+        <p>The Delhi office has been active in litigation practice in the Supreme Court, Delhi High Court and other ancillary Courts and Tribunals in Delhi and has its office located in Central Delhi in proximity to the Delhi High Court and Supreme Court.</p>
+        <div class="read-more-content">
+          <p>The Firm works with Associates in other major Cities in India on litigation matters. Although real estate, litigation and dispute resolution are the Firm’s core practice areas, the Firm has a substantial practice and experience in Conveyancing and Property transactions, as well as advising clients on investment transactions, both domestic and cross-border and on amalgamation mergers and restructuring of Companies.</p>
+          <p>The Firm also undertakes work in the Intellectual Property Rights area and advises clients on matters relating to Copyrights, Trademarks and Patents.</p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       </div>
     </div>
 
     <div class="site-section">
 
       <div class="container">
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mb-0">
           <div class="col-lg-6 section-title text-center">
             <h2>Best Attorneys</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eligendi sint corrupti eos dolor numquam sit error fuga asperiores laborum!</p>
@@ -206,7 +286,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 spacing">
             <div class="person-1" onclick="openModal('dilip')">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid">
               <div class="person-1-contents">
@@ -219,8 +299,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 spacing">
+            <div class="person-1" onclick="openModal('rajiv')">
               <img src="images/person_1.jpg" alt="Image" class="img-fluid">
               <div class="person-1-contents">
                 <h2>Rajiv Narula</h2>
@@ -232,8 +312,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 spacing">
+            <div class="person-1" onclick="openModal('anuuj')">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid">
               <div class="person-1-contents">
                 <h2>Anuuj Narula</h2>
@@ -245,8 +325,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 spacing">
+            <div class="person-1" onclick="openModal('aurup')">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid">
               <div class="person-1-contents">
                 <h2>Aurup Dasgupta</h2>
@@ -258,8 +338,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 spacing">
+            <div class="person-1" onclick="openModal('ketki')">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid">
               <div class="person-1-contents">
                 <h2>Ketki Bhatia</h2>
@@ -271,8 +351,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 spacing">
+            <div class="person-1" onclick="openModal('hardeep')">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid">
               <div class="person-1-contents">
                 <h2>Hardeep Singh Anand</h2>
@@ -284,8 +364,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div class="person-1">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 spacing">
+            <div class="person-1" onclick="openModal('rohan')">
               <img src="images/person_2.jpg" alt="Image" class="img-fluid">
               <div class="person-1-contents">
                 <h2>Rohan Thawani</h2>
@@ -314,7 +394,7 @@
             <p><b>Email: </b><span id="modalEmail"></span></p>
           </div>
         </div>
-        <div class="modal-text" id="modalText" style="background-color: #cea15a; padding:0px !important;">
+        <div class="modal-text" id="modalText" style=" padding:0px !important;">
           <p>This section contains more detailed information about the attorney's experience, achievements, and biography. Add any additional information here.</p>
         </div>
       </div>
@@ -332,6 +412,52 @@
     text: "Dilip Jhangiani, A.C.A., LLB., is the Founding Partner of the Firm. Dilip qualified in 1977 as a Chartered Accountant as a rank holder and worked as a Tax Consultant with A.F. Ferguson & Co., Chartered Accountants before switching to legal practice and being enrolled with the Bar Council in January 1979.Dilip has practiced on the Original Side of the Bombay High Court since 1979 and has appeared in a wide range of civil matters including Constitutional, Commercial, Corporate, Intellectual Property Right and Property litigation. FDilip has an extensive experience in Real Estate transactions, including Conveyancing & Leasing matters, Property Management and Development Agreements having been part of some of the largest deals in the Real Estate sector in India. Dilip also has extensive experience on the corporate side and has advised several domestic and international clients on amalgamations, mergers, takeovers, divestments, and cross border transaction. He advises several corporate groups and overseas investment funds on legal issues related to investments in India including tax related issues."
   },
   // Add other employee details here
+  rajiv: {
+    name: "Rajiv Narula",
+    position: "Founding Partner",
+    email: "rajivn@jnalaw.in",
+    image: "images/person_3.jpg",
+    text: "Rajiv Narula was enrolled in 1982 on the role of Bar Council of Maharashtra and Goa, Mumbai and since then has been in an active practice. Between 1982 and 1999, he was practicing individually in the Bombay High Court and then in the year 1999, became a Founding Partner of M/s. Jhangiani, Narula & Associates, along with Dilip Jhangiani. Rajiv has handled civil litigation on a wide range of subjects such as disputes relating to Immovable Properties, Commercial Disputes, Arbitration, Intellectual Property, Media & Entertainment Industry and Testamentary matters. Rajiv has a rich experience in conducting trials in civil disputes.Rajiv has argued various cases involving important questions of civil law which are reported in the Law Journals."
+  },
+  anuuj: {
+    name: "Anuuj Narula",
+    position: "Partner Mumbai",
+    email: "anuj@jnalaw.in",
+    image: "images/person_3.jpg",
+    text: "Anuuj was enrolled at the Bar in 1991 and his legal practice spans over 25 years with a special focus on Litigation and Alternate Dispute Resolution. Anuuj works with clients in Real Estate, Intellectual Property, Media, Entertainment, and the service industry and not only advises the clients but also regularly makes appearance on their behalf in almost all the Courts and Tribunals in Mumbai. With the bulk of his clients being from the Real Estate sector, Anuuj routinely conducts due diligences in property transactions and also does a substantial amount of Conveyancing work.Whilst majority of his appearances are in the High Court of Bombay in its Original, Appellate, Extra Ordinary, and Testamentary Jurisdictions and the Bombay City Civil Courts, Anuuj also attends all Revenue Courts, Superintendent of Land records, Collector, Konkan Commissioner, SRA and MHADA Tribunals etc. specially formed High-power Committees, Charity Commissioner, Family Court and Consumer Courts."
+  },
+  aurup: {
+    name: "Aurup Dasgupta",
+    position: "Partner Mumbai",
+    email: "aurup@jnalaw.in",
+    image: "images/person_3.jpg",
+    text: "Aurup was enrolled at the Bar in 2003. Aurup’s core area of practice is Litigation & Dispute Resolution. He started his career with JNA’s Mumbai office in 2004 and was elevated as a Partner in the year 2013. In his 12 years of practice, Aurup has acquired extensive experience in a wide variety of matters across Courts and Tribunals across the country, including the Bombay High Court, the Bombay City Civil Court, The Co­ operative Court & its Appellate Court in Bombay, the Small Causes Court, the Company Law Board in Mumbai & Chennai, the Debt Recovery Tribunal, the Debt Recovery Appellate Tribunal, The Metropolitan Magistrates Court in Mumbai, the Board for Industrial and Financial Reconstruction (BIFR) and the Supreme Court of India.Aurup’s practice extends over civil and criminal litigation, and he has handled a variety of matters pertaining to Rent Control, Testamentary Law, Constitutional Law, Company Law, Real Estate, Intellectual Property Infringement, Family Law, Contractual Law, Administrative Law & matters pertaining to tenders. He has also extensively dealt with Arbitration matters before Tribunals as well as the High Courts and Supreme Court. Aurup also regularly advises domestic and international clients on company law matters including on Petitions for winding up, oppression of minority and mismanagement and schemes of amalgamation."
+  },
+
+  ketki: {
+    name: "Ketki Bhatia",
+    position: "Senior Associate Mumbai",
+    email: "ketkib@jnalaw.in",
+    image: "images/person_3.jpg",
+    text: "Ketki’s practice covers areas of Private Equity, Fund Formation, Exchange Control, General Corporate & Commercial Laws, and financial services.In the areas of Private Equity and foreign investment, Ketki has advised Private Equity Funds and multinational institutions in their investments in Indian unlisted companies under the automatic route and approval route. Ketki has also advised in setting up of Private Equity Funds and Offshore Funds. Ketki also has extensive experience in mutual funds and portfolio management and has advised several fund houses on the regulations issued by SEBI from time to time and their ongoing compliance. Ketki regularly advises clients on Indian law issues concerning Exchange Control Regulations and general corporate laws in relation to inbound investments, joint ventures, business transfers and slump sales. Prior to joining JNA, Ketki gained her experience at Gagrat & Co. and ARA LAW."
+  },
+
+  hardeep: {
+    name: "Hardeep Singh Anand",
+    position: "Partner Delhi Office",
+    email: "hardeep@jnalaw.in",
+    image: "images/person_3.jpg",
+    text: "Hardeep joined JNA as a Partner in the New Delhi office in 2007 and his core practice areas are Intellectual Property and Litigation. Hardeep has been in practice for over 31 years and is enrolled as an Advocate­on­Record in the Supreme Court of India and also routinely appears before other Courts and legal fora in the country.Hardeep has specialized in Intellectual Property Law and practice, with a special emphasis on media and entertainment sectors. He has advised and acted on behalf of various entertainment companies and industry associations and also companies sourcing content on the mobile, television and internet platforms, as well as I.T. companies. Hardeep has been a member of several Government of India core groups to advising on Copyright law and his contributions to the 2012 amendments to the Copyright Act were acknowledged by name in the Joint Parliamentary Committee Report on the Copyright Amendment Bill, 2010. Hardeep is a regular public speaker on Intellectual Property Law and has delivered several lectures on copyright issues at the behest of various Government departments including in Guwahati, Vishakapatnam; Goa, Jodhpur and Jaisalmer; Ahmedabad, Hyderabad. Hardeep has also delivered lectures to women scientists under TIFAC scheme in their IP awareness workshops in Delhi in 2007 and 2008, on Copyright Management in the Digital environment; delivered keynote address in Nokia Connects “Music Matters” on the 2012 amendments to the Copyright Act."
+  },
+
+  rohan: {
+    name: "Rohan Thawani",
+    position: "Partner Delhi Office",
+    email: "rohan@jnalaw.in",
+    image: "images/person_3.jpg",
+    text: "Rohan is a Partner in the New Delhi office of the Firm and graduated from the National Law School of India University, Bangalore, in 2002. He enrolled at the Bar in August 2002.Between January and December 2003, he assisted Hon’ble Mr. Justice R.C. Lahoti, a former Chief Justice of India as a Research Assistant to His Lordship. Rohan has extensive litigation experience in the Supreme Court of India, the Delhi High Court and various Courts and Tribunals in Delhi, as well as significant Arbitration experience. His expertise covers Civil and Company Laws, Constitutional and Administrative law matters, contract and tender cases, consumer laws, service law cases, etc. He is well versed with Criminal Laws and Criminal Justice Administration and handles Criminal matters for the clients of the Firm, with particular focus on cases before the Supreme Court and High Court. He has wide experience of white-collar Criminal Law, especially matters relating to negotiable instruments. He has handled a large number of Criminal matters for different corporations and individuals arising out of business transactions."
+  },
+  
 };
 
 function openModal(employeeId) {
