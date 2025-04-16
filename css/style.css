@@ -807,7 +807,7 @@ p.dropcap:first-child:first-letter {
     color: #cea15a;
     margin-bottom: 30px; }
   .form-request .form-control {
-    border: 1px solid #efefef; }
+    border: 2px solid #efefef; }
   .form-request .form-control {
     padding-top: 20px;
     padding-bottom: 20px;
