@@ -633,7 +633,7 @@ p.dropcap:first-child:first-letter {
       right: 0px;
       height: 100%;
       width: 1px;
-      background: rgba(255, 255, 255, 0.2); }
+      background: rgba(255, 255, 255, 0.055); }
       @media (max-width: 991.98px) {
         .section-2 .service-1:after {
           display: none; } }
@@ -652,7 +652,7 @@ p.dropcap:first-child:first-letter {
       transition: .3s all ease; }
       @media (max-width: 991.98px) {
         .section-2 .service-1:before {
-          background: rgba(41, 52, 98, 0.7); } }
+          background: rgba(18, 22, 36, 0.7); } }
     .section-2 .service-1 .service-1-contents {
       padding: 70px 50px;
       position: relative; }
@@ -668,7 +668,8 @@ p.dropcap:first-child:first-letter {
         font-size: 18px;
         text-transform: uppercase; }
     .section-2 .service-1:hover:before {
-      background: rgba(41, 52, 98, 0.7); }
+      background: rgba(10, 13, 22, 0.7)
+      ; }
     .section-2 .service-1:hover h2, .section-2 .service-1:hover p {
       color: #fff; }
     .section-2 .service-1 .more {
