@@ -569,7 +569,7 @@ a {
   border-radius: 0; }
 
 p.dropcap:first-child:first-letter {
-  color: #fd7e14;
+  color: #00123A;
   float: left;
   font-family: Georgia;
   font-size: 75px;
@@ -706,7 +706,7 @@ p.dropcap:first-child:first-letter {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: #fd7e14; }
+  background: #00123A; }
 
 .more {
   text-transform: uppercase; }
