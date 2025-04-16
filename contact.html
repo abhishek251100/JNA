@@ -55,10 +55,23 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .text-right {
+    margin-top: -3rem !important;
+  }
+
+  .img-fluid {
+    margin-left: -5% !important;
+  }
+
+  .left{
+    margin-right: -17rem !important;
+    margin-top: -2rem !important;
+  }
     .new{
   
-  padding-bottom: 6rem !important;
-  padding-top: 0rem !important;
+      margin-right: -16.5rem !important;
+      margin-top: -1rem !important;
 }
 }
 
@@ -144,47 +157,54 @@
     margin-top: 20px;
     color: #333;
 }
+.site-navbar {
+  display: flex;
+  align-items: flex-start; /* Aligns children to the top */
+  justify-content: space-between; /* Optional: keeps burger on far right */
+}
+
+
 
   </style>
     
   
-  <div class="site-wrap">
+    <div class="site-wrap">
 
-    <div class="site-navbar mt-4">
-      <div class="container py-1">
-        <div class="row align-items-center">
-          <div class="col-8 col-md-8 col-lg-4">
+      <div class="site-navbar mt-4">
+        <div class="container py-1">
+          <div class="row align-items-center">
+            <div class="col-8 col-md-8 col-lg-4">
               <h1 class="mb-0">
                 <a href="index.html" class="d-inline-block">
                   <img src="images/JNA (1).jpg" alt="Jhangiani Narula & Associates Logo" class="img-fluid" style="max-height: 60px;">
                 </a>
               </h1>
             </div>
-          <div class="col-4 col-md-4 col-lg-8">
-            <nav
-              class="site-navigation text-right text-md-right"
-              role="navigation"
-            >
-             <div class="d-inline-block d-lg-none ml-md-0 mr-auto new">
-                <a href="#" class="site-menu-toggle js-menu-toggle text-white"
-                  ><span class="icon-menu h3"></span
-                ></a>
-              </div>
-
-               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active">
-                  <a href="index.html">Home</a>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="practice.html">Practice Areas</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
+            <div class="col-4 col-md-4 col-lg-8">
+              <nav
+                class="site-navigation text-right text-md-right"
+                role="navigation"
+              >
+               <div class="d-inline-block d-lg-none ml-md-0 mr-auto new">
+                  <a href="#" class="site-menu-toggle js-menu-toggle text-white"
+                    ><span class="icon-menu h3"></span
+                  ></a>
+                </div>
+  
+                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="practice.html">Practice Areas</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
+      </div>
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
