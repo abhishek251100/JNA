@@ -6,6 +6,12 @@ body {
   font-size: 1.1rem;
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #4a3c34 !important;
+    border-color: #4a3c34 !important;
+  }
+  
 ::-moz-selection {
   background: #000;
   color: #fff; }
@@ -102,7 +108,7 @@ a {
   padding-bottom: 20px;
   border-radius: 0; }
   .form-control:active, .form-control:focus {
-    border-color: #cea15a; }
+    border-color: #53453F; }
   .form-control:hover, .form-control:active, .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
@@ -217,7 +223,7 @@ a {
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
     color: #fff; }
   .site-footer a {
-    color: #cea15a; }
+    color: #53453F; }
     .site-footer a:hover {
       color: #000; }
   .site-footer ul li {
@@ -231,7 +237,7 @@ a {
     padding-bottom: 15px; }
     .site-footer .footer-heading:before {
       content: "";
-      background: #cea15a;
+      background: #53453F;
       width: 40px;
       height: 2px;
       position: absolute;
@@ -351,7 +357,7 @@ a {
             padding: 5px 20px;
             display: block; }
             .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover {
-              color: #cea15a; }
+              color: #53453F; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children > a:before {
             content: "\e315";
             right: 20px; }
@@ -359,7 +365,7 @@ a {
             left: 100%;
             top: 0; }
           .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:active > a, .site-navbar .site-navigation .site-menu .has-children .dropdown > li.has-children:focus > a {
-            color: #cea15a; }
+            color: #53453F; }
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
         color: #fff; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
@@ -441,12 +447,12 @@ a {
       position: relative;
       color: #212529; }
       .site-mobile-menu .site-nav-wrap a:hover {
-        color: #cea15a; }
+        color: #53453F; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
       .site-mobile-menu .site-nav-wrap li.active > a {
-        color: #cea15a; }
+        color: #53453F; }
     .site-mobile-menu .site-nav-wrap .arrow-collapse {
       position: absolute;
       right: 0px;
@@ -592,7 +598,7 @@ p.dropcap:first-child:first-letter {
 
 .section-2 {
   margin-bottom: 30px;
-  background: #cea15a;
+  background: #53453F;
   color: #fff;
   font-size: 15px; }
   @media (max-width: 991.98px) {
@@ -642,7 +648,7 @@ p.dropcap:first-child:first-letter {
     .section-2 .service-1:before {
       content: "";
       position: absolute;
-      background: #cea15a;
+      background: #53453F;
       top: 0;
       left: 0;
       right: 0;
@@ -742,7 +748,7 @@ p.dropcap:first-child:first-letter {
   width: 80px;
   height: 80px;
   position: relative;
-  border: 1px solid #cea15a; }
+  border: 1px solid #53453F; }
   .feature-1 .feature-1-icon span {
     position: absolute;
     top: 50%;
@@ -752,7 +758,7 @@ p.dropcap:first-child:first-letter {
     transform: translate(-50%, -50%);
     line-height: 0;
     font-size: 2.5rem;
-    color: #cea15a; }
+    color: #53453F; }
 
 .feature-1 .feature-1-contents .number, .feature-1 .feature-1-contents .caption {
   display: block; }
@@ -766,7 +772,7 @@ p.dropcap:first-child:first-letter {
 .feature-1 .feature-1-contents .caption {
   font-size: 13px;
   text-transform: uppercase;
-  color: #cea15a; }
+  color: #53453F; }
 
 .person-1 .person-1-contents {
   width: 90%;
@@ -774,7 +780,7 @@ p.dropcap:first-child:first-letter {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #cea15a;
+  background: #53453F;
   color: #fff; }
   .person-1 .person-1-contents h2 {
     font-size: 1.5rem;
@@ -804,7 +810,7 @@ p.dropcap:first-child:first-letter {
   background: #fff; }
   .form-request h2 {
     font-size: 30px;
-    color: #cea15a;
+    color: #53453F;
     margin-bottom: 30px; }
   .form-request .form-control {
     border: 2px solid #efefef; }
@@ -846,13 +852,13 @@ p.dropcap:first-child:first-letter {
       background: #ccc;
       border-radius: 50%; }
     .testimonial-slider .owl-dots .owl-dot.active span {
-      background: #cea15a; }
+      background: #53453F; }
 
 .accordion-item {
   font-family: 'Oswald', sans-serif; }
 
 .accordion-item[aria-expanded="true"] {
-  color: #cea15a; }
+  color: #53453F; }
 
 .block-16 {
   position: relative; }
