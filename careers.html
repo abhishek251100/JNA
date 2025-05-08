@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Judicial &mdash; Colorlib Website Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Oswald:400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/mediaelementplayer.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/fl-bigmug-line.css">
+    
+  
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+  <style>
+
+    html, body {
+     overflow-x: hidden;
+    }
+  
+    .d-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+.col-lg-4 {
+  max-width: 33%;
+  min-width: 300px; /* ensure it's readable on small screens */
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+@media screen and (max-width: 768px) {
+
+  .flud{
+    max-height: 40px !important;
+
+  }
+  .text-right {
+    margin-top: -3rem !important;
+  }
+
+  .img-fluid {
+    margin-left: 1% !important;
+  }
+
+  .left{
+    margin-right: -17rem !important;
+    margin-top: -2rem !important;
+  }
+    .new{
+  
+      margin-right: -17rem !important;
+      margin-top: 0.5rem !important;
+}
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px; 
+    border-radius: 8px;
+}
+@media (min-width: 1024px) {
+  /* Your styles for laptops and above */
+
+  .contact-form{
+    max-width: 71%;
+    margin-left: 15%;
+  }
+  .dud{
+    gap: 5px !important;
+    padding-left: 26rem !important;
+  }
+  .site-navbar .site-navigation .site-menu {
+    
+    margin-left: -90px;
+  }
+
+
+  .site-menu {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.site-menu li {
+  white-space: nowrap !important; /* Prevent text from wrapping */
+  display: inline-block !important;
+}
+
+.site-menu li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+  .quick{
+    display: block !important;
+  }
+
+  .link{
+    padding-left: 11rem;
+
+  }
+
+  .foot{
+    padding-left: 10rem;
+  }
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-control{
+  border: 2px solid #ced4da !important;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-details .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-details label {
+    font-weight: bold;
+}
+
+.modal-details input,
+.modal-details textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-details button:hover {
+    background-color: #0056b3;
+}
+
+
+.modal-text {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #333;
+}
+.site-navbar {
+  display: flex;
+  align-items: flex-start; /* Aligns children to the top */
+  justify-content: space-between; /* Optional: keeps burger on far right */
+}
+
+
+
+  </style>
+    
+  
+    <div class="site-wrap">
+
+      <div class="site-navbar mt-4">
+        <div class="container py-1">
+          <div class="row align-items-center">
+            <div class="col-8 col-md-8 col-lg-4">
+              <h1 class="mb-0">
+                <a href="index.html" class="d-inline-block">
+                  <img src="images/Logo - White on Transparent.png" alt="Jhangiani Narula & Associates Logo" class="img-fluid flud" style="max-height: 70px;">
+                </a>
+              </h1>
+            </div>
+            <div class="col-4 col-md-4 col-lg-8">
+              <nav
+                class="site-navigation text-right text-md-right"
+                role="navigation"
+              >
+               <div class="d-inline-block d-lg-none ml-md-0 mr-auto new">
+                  <a href="#" class="site-menu-toggle js-menu-toggle text-white"
+                    ><span class="icon-menu h3"></span
+                  ></a>
+                </div>
+  
+                <ul class="site-menu js-clone-nav d-none d-lg-flex dud">
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                  </li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="practice.html">Practice Areas</a></li>
+                   <li><a href="careers.html">Careers</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url('images/Careers\ Page.jpg');" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400"> 
+            <h1 class="mb-4">Careers</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Site Section Start for Internship -->
+
+
+
+  
+    <br>
+     <div class="row justify-content-center mb-4">
+        <div class="col-lg-6 section-title text-center">
+          <h2>Careers</h2>
+          <p>At our firm, we believe in fostering talent and building careers grounded in professionalism and purpose. Explore opportunities to grow with us.</p>
+        </div>
+      </div>
+    
+      <!-- Intern Form -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7">
+          <form action="#" class="contact-form" >
+            <div class="row form-group" >
+              <div class="col-md-12 mb-3 mb-md-0">
+                <label class="font-weight-bold" for="fullname2">Full Name</label>
+                <input type="text" id="fullname2" class="form-control" placeholder="Full Name">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="email2">Email</label>
+                <input type="email" id="email2" class="form-control" placeholder="Email Address">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="lawschool">Law School Name</label>
+                <input type="text" id="lawschool" class="form-control" placeholder="Law School Name">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="resume">Resume</label>
+                <input type="file" id="resume" accept=".pdf" class="form-control" style="padding-bottom: 42px;">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="descr">Describe Yourself</label>
+                <textarea name="descr" id="descr" cols="30" rows="5" class="form-control"
+                  placeholder="Describe Yourself"></textarea>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-md-12">
+                <input type="submit" value="Submit" class="btn btn-primary py-3 px-4">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+      
+      
+   
+   
+    
+    
+
+  </div>
+  
+
+ 
+  <div class="bg-primary" data-aos="fade">
+    <div class="container">
+      <div class="row justify-content-center">
+        <a href="#" class="col-2 text-center py-4 social-icon d-block">
+          
+        </a>
+        <a href="#" class="col-2 text-center py-4 social-icon d-block">
+          
+        </a>
+        <a href="#" class="col-2 text-center py-4 social-icon d-block">
+          
+        </a>
+        <a href="#" class="col-2 text-center py-4 social-icon d-block">
+         
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mb-5">
+              <h3 class="footer-heading mb-4">JHANGIANI NARULA & ASSOCIATES</h3>
+             <p>Established in 1999, Jhangiani, Narula & Associates is a renowned legal firm listed with the Bombay High Court. With offices in Delhi and Mumbai, the firm specializes in intellectual property, litigation, real estate, and conflict resolution. Its extensive range of legal services includes conveyance, real estate transactions, financial consulting, mergers, and cross-border legal matters. Through its network of partners, the firm provides clients across India with expert legal counsel. </p>
+            </div>
+            <div class="mb-5"></div>
+          </div>
+          <div class="col-lg-6 mb-lg-0">
+            <div class="row mb-5 quick">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4 foot">Navigations</h3>
+              </div>
+              <div class="col-md-6 col-lg-6 link">
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="practice.html">Practice Areas</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="careers.html">Careers</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                
+                </ul>
+              </div>
+             
+            </div>
+
+
+            <div class="row"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | This template is made with
+              <i class="icon-heart text-danger" aria-hidden="true"></i> by
+              <a
+                href="https://www.google.com/maps/dir//the+starter+labs/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be7ce76db4fa221:0x4d9473e2235bc38a?sa=X&ved=1t:3061&ictx=111"
+                target="_blank"
+                >The Staterlabs</a
+              >
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <!-- <script src="js/circleaudioplayer.js"></script> -->
+
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
